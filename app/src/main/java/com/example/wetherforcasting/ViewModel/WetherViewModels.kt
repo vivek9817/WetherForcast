@@ -6,6 +6,7 @@ import com.example.wetherforcasting.Domains.ApiCallback
 import com.example.wetherforcasting.Domains.Constant
 import com.example.wetherforcasting.Domains.Repository
 import com.example.wetherforcasting.Model.CurrentForcast
+import com.example.wetherforcasting.Model.FutureForcast
 import com.example.wetherforcasting.Utils.CommonUtils.convertLinkedTreeMapToClass
 import kotlinx.coroutines.Dispatchers
 
@@ -16,6 +17,19 @@ class WetherViewModels() : ViewModel() {
         try {
             Repository().getRequest().apply {
                 convertLinkedTreeMapToClass<CurrentForcast>(this!!).apply {
+                    emit(ApiCallback.onSuccess(data = this))
+                }
+            }
+        } catch (err: Throwable) {
+            emit(ApiCallback.onFailure(data = null, message = err.localizedMessage))
+        }
+    }
+
+    fun getAfterFourYearWetherReport() = liveData(Dispatchers.Default) {
+        emit(ApiCallback.onLoading(null))
+        try {
+            Repository().getAfterFourRequest().apply {
+                convertLinkedTreeMapToClass<FutureForcast>(this!!).apply {
                     emit(ApiCallback.onSuccess(data = this))
                 }
             }

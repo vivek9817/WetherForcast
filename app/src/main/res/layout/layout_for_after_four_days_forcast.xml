@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:animateLayoutChanges="true"
+        android:background="@color/bgColor"
+        android:orientation="horizontal"
+        android:padding="@dimen/_11sdp"
+        android:weightSum="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt1ForcastDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Tuesday"
+            android:textAlignment="viewStart"
+            android:textColor="@color/lightBlack"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="normal|bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt1Day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="12"
+            android:textAlignment="textEnd"
+            android:textColor="@color/lightBlack"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="normal|bold" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:animateLayoutChanges="true"
+        android:background="@color/bgColor"
+        android:orientation="horizontal"
+        android:padding="@dimen/_11sdp"
+        android:weightSum="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt2ForcastDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Tuesday"
+            android:textAlignment="viewStart"
+            android:textColor="@color/lightBlack"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="normal|bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt2Day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="12"
+            android:textAlignment="textEnd"
+            android:textColor="@color/lightBlack"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="normal|bold" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:animateLayoutChanges="true"
+        android:background="@color/bgColor"
+        android:orientation="horizontal"
+        android:padding="@dimen/_11sdp"
+        android:weightSum="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt3ForcastDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Tuesday"
+            android:textAlignment="viewStart"
+            android:textColor="@color/lightBlack"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="normal|bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt3Day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="12"
+            android:textAlignment="textEnd"
+            android:textColor="@color/lightBlack"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="normal|bold" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:animateLayoutChanges="true"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@color/bgColor"
+        android:orientation="horizontal"
+        android:padding="@dimen/_11sdp"
+        android:weightSum="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt4ForcastDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Tuesday"
+            android:textAlignment="viewStart"
+            android:textColor="@color/lightBlack"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="normal|bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt4Day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="12"
+            android:textAlignment="textEnd"
+            android:textColor="@color/lightBlack"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="normal|bold" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

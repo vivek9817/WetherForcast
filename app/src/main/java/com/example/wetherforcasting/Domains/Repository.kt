@@ -6,4 +6,6 @@ class Repository {
 
     suspend fun getRequest() = apiService?.getRequest()
 
+    suspend fun getAfterFourRequest() = apiService?.getAfterFourRequest()
+
 }

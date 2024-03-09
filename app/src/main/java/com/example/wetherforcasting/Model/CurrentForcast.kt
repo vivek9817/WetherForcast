@@ -36,10 +36,10 @@ data class Weather(
 
 @Parcelize
 data class Main(
-    var temp: Double? = null,
-    var feels_like: Double? = null,
-    var temp_min: Double? = null,
-    var temp_max: Double? = null,
+    var temp: Float? = null,
+    var feels_like: Float? = null,
+    var temp_min: Float? = null,
+    var temp_max: Float? = null,
     var pressure: Int? = null,
     var humidity: Int? = null
 ) : Parcelable
